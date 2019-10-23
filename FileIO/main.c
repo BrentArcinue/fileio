@@ -8,8 +8,13 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(void){
+    
+    char function[20];
+    
+    printf("What function would you like to find?");
+    scanf("%s", function);
+    
+    
     return 0;
 }
