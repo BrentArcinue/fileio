@@ -11,7 +11,7 @@
 int main(void){
     
     char file[100];
-    printf("What file do you want to open?");
+    printf("What file do you want to open? (full path)");
     scanf("%s", file);
     
     {
