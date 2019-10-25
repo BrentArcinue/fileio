@@ -10,11 +10,34 @@
 
 int main(void){
     
+    char file[20];
     char function[20];
     
-    printf("What function would you like to find?");
+    printf("What file would you like to look through?");
+    scanf("%s", file);
+    printf("What function would you like to find??");
     scanf("%s", function);
     
+    {
+        /* Pointer to the file */
+        FILE *fp1;
+        /* Character variable to read the content of file */
+        char c;
+        
+        /* Opening a file in r mode*/
+        fp1= fopen ("C:\\myfiles\\newfile.txt", "r");
+        
+        /* Infinite loop –I have used break to come out of the loop*/
+        while(1)
+        {
+            c = fgetc(fp1);
+            if(c==EOF)
+                break;
+            else
+                printf("%c", c);
+        }
+        fclose(fp1);
+        return 0;
+    }
     
-    return 0;
 }
