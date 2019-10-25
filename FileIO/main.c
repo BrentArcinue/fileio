@@ -13,6 +13,10 @@ int main(void){
     char file[100];
     printf("What file do you want to open?");
     scanf("%s", file);
+    printf("What function would you like to find??");
+    scanf("%s", function);
+    
+    {
         /* Pointer to the file */
         FILE *fp1;
         /* Character variable to read the content of file */
